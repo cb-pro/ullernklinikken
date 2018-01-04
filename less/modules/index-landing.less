@@ -1,0 +1,891 @@
+/* ------------------------------- */
+/*             LANDING             */
+/* ------------------------------- */
+
+.hidetmp {
+  display: none;
+}
+
+
+/* LANDING > LOGO */
+.landing-logo {
+  position: absolute;
+  left: 138px;
+  z-index: 60;
+}
+
+/* LANDING > BACKGROUND IMAGE */
+.bg-landing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-popup-order-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 70;
+  display: none;
+  cursor: pointer;
+}
+
+.landing-popup-order-close_btn {
+  //border: 1px dashed red;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  z-index: 71;
+
+  svg:hover {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+  }
+
+  svg:hover line {
+    stroke: @secondary-color;
+  }
+
+  svg:active {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+  }
+}
+
+
+.landing-popup-order-background {
+  width: 100%;
+  height: 100%;
+  background: #05312a;
+  position: absolute;
+  opacity: 0.99;
+}
+
+.landing-popup-order-container {
+  font-family: @secondary-font;
+  padding: 60px;
+  color: white;
+  border: 1px solid white;
+  position: absolute;
+  left: 50%;
+  top: 49.5%;
+  -webkit-transform: translate(-50%,-50%);
+     -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+       -o-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  border-radius: 18px;
+  opacity: 1;
+  vertical-align: top;
+}
+
+.landing-popup-order-title {
+  font-family: @primary-font;
+  color: @white-color;
+  font-size: 30px;
+}
+
+.landing-popup-order-line {
+  background: @secondary-color;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0px 30px 0px;
+}
+
+.landing-popup-order-text {
+  font-family: @secondary-font;
+  color: @white-color;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+
+  p {
+    margin-top: 33px;
+  }
+}
+
+/* LANDING > INTRO TITLE */
+.lit {
+  height: 100%;
+}
+.landing-intro-title {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-60%);
+
+  .text {
+    color: @landing-text-color;
+    font-family: @primary-font;
+    font-size: 5vw;
+    font-weight: @font-weight-titles;
+    letter-spacing: @letter-spacing-titles;
+    text-align: center;
+    text-shadow: 2px 2px 10px #333;
+  }
+
+  .vikarstilling {
+    text-align: center;
+    font-family: @secondary-font;
+    color: @landing-text-color;
+            display: flex;
+        display: -ms-flex;
+       display: -moz-flex;
+    display: -webkit-flex;
+            flex-flow: column;
+        -ms-flex-flow: column;
+       -moz-flex-flow: column;
+    -webkit-flex-flow: column;
+
+    .kg-card-markdown {
+      padding: 8px 20px;
+      margin: 5vh auto 0 auto;
+      background: hsla(0, 0%, 20%, 0.4);
+      border: 2px dashed white;
+      border-radius: 5px;
+
+      h5 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 0;
+        a {
+        color: @secondary-color;
+        font-size: 12px;
+        letter-spacing: 1.15px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* LANDING > INTRO TEXT */
+.landing-intro-text {
+  color: grey;
+  font-family: @secondary-font;
+  font-size: 15pt;
+  font-weight: 300;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+/* LANDING > INTRO TEXT 2 */
+.landing-intro-text-2 {
+  color: grey;
+  font-family: @secondary-font;
+  font-size: 17pt;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.landing-intro-text-3 {
+  color: grey;
+  font-family: @secondary-font;
+  font-size: 17pt;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.landing-intro-text-3 {
+  .kg-card-markdown {
+    display: inline;
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+
+/* LANDING > BOTTOM > GOOGLE MAP */
+.landing-bottom-left {
+  position: absolute;
+  bottom: 56px;
+  left: 138px;
+}
+
+.landing-googlemap-circle-container {
+  width: 170px; height: 170px;
+          display: flex;
+      display: -ms-flex;
+     display: -moz-flex;
+  display: -webkit-flex;
+          justify-content: center;
+      -ms-justify-content: center;
+     -moz-justify-content: center;
+  -webkit-justify-content: center;
+          align-items: center;
+      -ms-align-items: center;
+     -moz-align-items: center;
+  -webkit-align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  opacity: 0.9999999;
+}
+
+.landing-googlemap-box {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 250px; height: 250px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+/* LANDING > BOTTOM > ARROW DOWN */
+.landing-bottom-center {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0%);
+     -moz-transform: translate(-50%,0%);
+      -ms-transform: translate(-50%,0%);
+       -o-transform: translate(-50%,0%);
+          transform: translate(-50%,0%);
+}
+
+
+/* LANDING > BOTTOM > ORDER BUTTON */
+.landing-bottom-right {
+  position: absolute;
+  bottom: 56px;
+  right: 138px;
+  -webkit-transform: translate(0px, -15px);
+     -moz-transform: translate(0px, -15px);
+      -ms-transform: translate(0px, -15px);
+       -o-transform: translate(0px, -15px);
+          transform: translate(0px, -15px);
+  -webkit-transition: 150ms ease-in-out;
+          transition: 150ms ease-in-out;
+  cursor: pointer;
+    color: @primary-color;
+    background: @white-color;
+    font-family: @secondary-font;
+    font-size: 21px;
+    padding: 20px 40px;
+    border-radius: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.landing-bottom-right:hover {
+  position: absolute;
+  bottom: 55px;
+  right: 134px;
+  -webkit-transform: translate(0px, -15px);
+     -moz-transform: translate(0px, -15px);
+      -ms-transform: translate(0px, -15px);
+       -o-transform: translate(0px, -15px);
+          transform: translate(0px, -15px);
+    color: @white-color;
+    background: @primary-color;
+    font-size: 22px;
+    padding: 22px 42px;
+    box-shadow: 0px 0px 50px #454545;
+}
+
+.landing-bottom-right:active {
+  position: absolute;
+  bottom: 56px;
+  right: 138px;
+  -webkit-transform: translate(0px, -15px);
+     -moz-transform: translate(0px, -15px);
+      -ms-transform: translate(0px, -15px);
+       -o-transform: translate(0px, -15px);
+          transform: translate(0px, -15px);
+  -webkit-transition: 50ms ease-in-out;
+          transition: 50ms ease-in-out;
+    color: @white-color;
+    background: @secondary-color;
+    font-size: 21px;
+    padding: 20px 40px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+
+
+
+
+// =====================================================================
+//
+//    MEDIA-Q
+//
+// =====================================================================
+
+
+
+@media only screen and (max-width: 1100px) {
+    //body {display: none;}
+}
+
+// =====================================================================
+
+@media only screen and (max-height: 800px) {
+  .landing-logo {
+    position: absolute;
+    left: 50px;
+    z-index: 60;
+  }
+
+  .landing-navbar-wrapper {
+    color: @landing-text-color;
+    font-family: @secondary-font;
+    position: absolute;
+    right: 50px;
+    z-index: 60;
+            display: flex;
+        display: -ms-flex;
+       display: -moz-flex;
+    display: -webkit-flex;
+            justify-content: flex-end;
+        -ms-justify-content: flex-end;
+       -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+  }
+
+  .landing-bottom-left {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+  }
+
+  .landing-bottom-right {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    -webkit-transform: translate(0px, -15px);
+       -moz-transform: translate(0px, -15px);
+        -ms-transform: translate(0px, -15px);
+         -o-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
+    -webkit-transition: 150ms ease-in-out;
+            transition: 150ms ease-in-out;
+    cursor: pointer;
+      color: @primary-color;
+      background: @white-color;
+      font-family: @secondary-font;
+      font-size: 21px;
+      padding: 20px 40px;
+      border-radius: 9px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  .landing-bottom-right:hover {
+    position: absolute;
+    bottom: 29px;
+    right: 46px;
+    -webkit-transform: translate(0px, -15px);
+       -moz-transform: translate(0px, -15px);
+        -ms-transform: translate(0px, -15px);
+         -o-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
+      color: @white-color;
+      //background: @primary-color;
+      font-size: 22px;
+      padding: 22px 42px;
+      box-shadow: 0px 0px 50px #454545;
+  }
+
+  .landing-bottom-right:active {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    -webkit-transform: translate(0px, -15px);
+       -moz-transform: translate(0px, -15px);
+        -ms-transform: translate(0px, -15px);
+         -o-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
+    -webkit-transition: 50ms ease-in-out;
+            transition: 50ms ease-in-out;
+      color: @white-color;
+      background: @secondary-color;
+      font-size: 21px;
+      padding: 20px 40px;
+      box-shadow: none;
+  }
+
+}
+
+// =====================================================================
+
+@media only screen and (max-width: 1200px) {
+  .margintop-landing-intro {margin-top: 25vh;}
+}
+
+// =====================================================================
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  //.margin {margin: 0px;}
+  .landing-logo {left: 40px;}
+  .landing-navbar-wrapper {right: 40px;}
+  .landing-bottom-left {left: 40px; bottom: 24px;}
+  .landing-bottom-right {right: 40px; bottom: 24px;}
+
+  .margin-container {margin:0px 80px 0px 80px;}
+
+  .margintop-landing-intro {margin-top: 23vh;}
+  .landing-intro-title {font-size: 4.5vw;}
+  .landing-intro-text {font-size: 13pt;}
+  .landing-intro-text-2, .landing-intro-text-3 {font-size: 15pt;}
+
+
+  .landing-bottom-right:hover {
+    position: absolute;
+    bottom: 23px;
+    right: 36px;
+    -webkit-transform: translate(0px, -15px);
+       -moz-transform: translate(0px, -15px);
+        -ms-transform: translate(0px, -15px);
+         -o-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
+      color: @white-color;
+      //background: @primary-color;
+      font-size: 22px;
+      padding: 22px 42px;
+      box-shadow: 0px 0px 50px #454545;
+  }
+
+  .landing-bottom-right:active {
+    position: absolute;
+    bottom: 24px;
+    right: 40px;
+    -webkit-transform: translate(0px, -15px);
+       -moz-transform: translate(0px, -15px);
+        -ms-transform: translate(0px, -15px);
+         -o-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
+    -webkit-transition: 50ms ease-in-out;
+            transition: 50ms ease-in-out;
+      color: @white-color;
+      background: @secondary-color;
+      font-size: 21px;
+      padding: 20px 40px;
+      box-shadow: none;
+  }
+}
+
+// =====================================================================
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .landing-intro-text {
+    font-size: 13pt;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-height: 800px) {
+  .landing-logo {left: 40px;}
+  .landing-navbar-wrapper {right: 40px;}
+  .landing-bottom-left {left: 40px; bottom: 24px;}
+  .landing-bottom-right {right: 40px; bottom: 24px;}
+
+  .margin-container {margin:0px 80px 0px 80px;}
+
+  .margintop-landing-intro {margin-top: 30vh;}
+  .landing-intro-title {font-size: 8vw;}
+  .landing-intro-text {font-size: 13pt;}
+  .landing-intro-text-2, .landing-intro-text-3 {font-size: 15pt;}
+
+
+  .landing-bottom-right:hover {
+    position: absolute;
+    bottom: 23px;
+    right: 36px;
+    -webkit-transform: translate(0px, -15px);
+       -moz-transform: translate(0px, -15px);
+        -ms-transform: translate(0px, -15px);
+         -o-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
+      color: @white-color;
+      //background: @primary-color;
+      font-size: 22px;
+      padding: 22px 42px;
+      box-shadow: 0px 0px 50px #454545;
+  }
+
+  .landing-bottom-right:active {
+    position: absolute;
+    bottom: 24px;
+    right: 40px;
+    -webkit-transform: translate(0px, -15px);
+       -moz-transform: translate(0px, -15px);
+        -ms-transform: translate(0px, -15px);
+         -o-transform: translate(0px, -15px);
+            transform: translate(0px, -15px);
+    -webkit-transition: 50ms ease-in-out;
+            transition: 50ms ease-in-out;
+      color: @white-color;
+      background: @secondary-color;
+      font-size: 21px;
+      padding: 20px 40px;
+      box-shadow: none;
+  }
+}
+
+// =====================================================================
+
+@media only screen and (max-width: 768px) and (min-width: 501px) {
+  .margintop-landing-intro {margin-top: 25vh;}
+}
+
+// =====================================================================
+// iPad Portrait
+@media only screen and (max-width: 768px) and (min-height: 1024px) {
+  .landing-intro-title {
+    // position: absolute;
+    // top: 48%;
+    // transform: translateY(-60%);
+
+    .text {
+      // color: @landing-text-color;
+      // font-family: @primary-font;
+      font-size: 8vw;
+      // font-weight: @font-weight-titles;
+      // letter-spacing: @letter-spacing-titles;
+      // text-align: center;
+    }
+
+    .vikarstilling {
+      // text-align: center;
+      // font-family: @secondary-font;
+      // color: @landing-text-color;
+      // display: flex;
+      // flex-flow: column;
+
+      .kg-card-markdown {
+        // padding: 8px 20px;
+        // margin: 5vh auto 0 auto;
+        // background: hsla(0, 0%, 20%, 0.6);
+        // border: 2px dashed white;
+        // border-radius: 5px;
+
+        h5 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 0;
+          a {
+          // color: @secondary-color;
+            font-size: 12px!important;
+          // letter-spacing: 1.15px;
+          // text-transform: uppercase;
+          // text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPad PRO Portrait
+@media only screen and (max-width: 1024px) and (min-height: 1366px) {
+  .landing-intro-title {
+    // position: absolute;
+    // top: 48%;
+    // transform: translateY(-60%);
+
+    .text {
+      // color: @landing-text-color;
+      // font-family: @primary-font;
+      font-size: 8vw;
+      // font-weight: @font-weight-titles;
+      // letter-spacing: @letter-spacing-titles;
+      // text-align: center;
+    }
+
+    .vikarstilling {
+      // text-align: center;
+      // font-family: @secondary-font;
+      // color: @landing-text-color;
+      // display: flex;
+      // flex-flow: column;
+
+      .kg-card-markdown {
+        // padding: 8px 20px;
+        // margin: 5vh auto 0 auto;
+        // background: hsla(0, 0%, 20%, 0.6);
+        // border: 2px dashed white;
+        // border-radius: 5px;
+
+        h5 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 0;
+          a {
+          // color: @secondary-color;
+            font-size: 12px!important;
+          // letter-spacing: 1.15px;
+          // text-transform: uppercase;
+          // text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =====================================================================
+
+// Mobil
+@media only screen and (max-width: 500px) {
+
+  .bg-background-block {
+    background-color: #795e2f;
+    position: fixed;
+    height: 120%;
+    width: 100%;
+  }
+
+  .bg-landing {
+    position: fixed;
+    height: 640px;
+    background-position: center;
+    bottom: 0px;
+  }
+
+  .landing-logo {
+    left: 20px;
+
+    a {
+
+      img {
+        width: 120px!important;
+      }
+    }
+  }
+  .margintop-landing-logo {margin-top: 20px;}
+  .margintop-landing-logo-sub {margin-top: 19px;}
+  .landing-wcag-textsize {display: none;}
+  .landing-wcag-textsize-secondary {display: none;}
+  .landing-navbar-wrapper {right: 20px;}
+  .margintop-landing-navbar {margin-top: 26px;}
+  .landing-bottom-left {display: none;}
+  .landing-bottom-center {display: none;}
+
+  // BESTILLE TIME KNAPP ANIMASJON
+  .landing-bottom-right {
+    position: relative;
+    bottom: inherit;
+    right: inherit;
+    text-align: center;
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    padding: 20px 0px;
+    margin: -140px 0px 0px 0px;
+    color: @white-color;
+    background: @primary-color;
+  }
+
+  .landing-bottom-right:hover {
+    position: relative;
+    bottom: 0px;
+    right: -50%;
+    text-align: center;
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0px);
+       -moz-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+         -o-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+      color: @white-color;
+      //background: @primary-color;
+      font-size: 21px;
+      padding: 20px 0px;
+      box-shadow: inherit;
+      //margin: 0px;
+  }
+
+  .landing-bottom-right:active {
+    position: relative;
+    bottom: 0px;
+    right: -50%;
+    text-align: center;
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0px);
+       -moz-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+         -o-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+    -webkit-transition: 50ms ease-in-out;
+            transition: 50ms ease-in-out;
+      color: @white-color;
+      background: @secondary-color;
+      font-size: 21px;
+      padding: 20px 0px;
+      box-shadow: inherit;
+  }
+  // =======================
+
+  .margin-container {margin:0px 15px 0px 15px;}
+
+  .margintop-landing-intro {margin-top: 30vh;}
+  .landing-intro-text {font-size: 13pt; margin-left: 3%;}
+  .landing-intro-text-2 {margin-top: 40px;}
+  .landing-intro-text-2, .landing-intro-text-3 {font-size: 16pt; margin-left: 3%;}
+
+  .landing-intro-title {
+    margin-left: -23px;
+
+    .text {
+      font-size: 35px;
+    }
+
+    .vikarstilling {
+
+      .kg-card-markdown {
+        max-width: 225px;
+
+        h5 {
+          // font-size: 18px;
+        }
+        p {
+          a {
+          // color: @secondary-color;
+          // font-size: 12px;
+          // letter-spacing: 1.15px;
+          // text-transform: uppercase;
+          // text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  // BESTILLE TIME KNAPP SKJEMA
+  .landing-popup-order-container {
+    width: 93%;
+    height: 93%;
+    padding: 60px 30px;
+  }
+
+  .landing-popup-order-close_btn {
+    right: 2%;
+    top: 6%;
+
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+
+    svg:hover {
+      width: 20px;
+      height: 20px;
+      right: auto!important;
+      top: auto!important;
+      cursor: pointer;
+    }
+
+    svg:hover line, svg:active line {
+      stroke: @secondary-color;
+    }
+
+    svg:active {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .landing-popup-order-title {
+    font-size: 20px;
+  }
+
+  .landing-popup-order-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  // =======================
+
+
+}
+
+
+// =====================================================================
+
+@media only screen and (max-width: 360px) {
+
+  .bg-background-block {
+    background-color: #795e2f;
+    position: fixed;
+    height: 120%;
+    width: 100%;
+  }
+
+  .bg-landing {
+    position: fixed;
+    height: 500px;
+    background-position: center;
+    bottom: 0px;
+  }
+
+  // BESTILLE TIME KNAPP SKJEMA
+  .landing-popup-order-container {
+    width: 93%;
+    height: 93%;
+    padding: 40px 30px;
+  }
+
+  .landing-popup-order-close_btn {
+    right: 2%;
+    top: 6%;
+
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+
+    svg:hover {
+      width: 20px;
+      height: 20px;
+      right: auto!important;
+      top: auto!important;
+      cursor: pointer;
+    }
+
+    svg:hover line, svg:active line {
+      stroke: @secondary-color;
+    }
+
+    svg:active {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .landing-popup-order-title {
+    font-size: 20px;
+  }
+
+  .landing-popup-order-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  // =======================
+}

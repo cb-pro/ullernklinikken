@@ -1,0 +1,171 @@
+/* ---------------------------- */
+/*             HOME             */
+/* ---------------------------- */
+
+
+/* HOME > ICONS */
+.home-icons {
+  border-color: @primary-color;
+  border-radius: @border-radius;
+  border-width: 3px;
+  border-style: solid;
+  min-width: 196px;
+  height: 196px;
+}
+
+.home-icons-line {
+  background-color: @primary-color;
+  min-width: 196px;
+  height: 3px;
+  margin-top: 30px;
+}
+
+.home-icons-text {
+  color: @primary-color;
+  font-family: primary-font;
+  min-width: 196px;
+  margin-top: 10px;
+  font-size: 16pt;
+}
+
+/* HOME > TEXT */
+
+/* HOME > TEXT TITLES */
+.home-text-title {
+  color: @primary-color;
+  font-family: @primary-font;
+  line-height: @lineheight-home-titles;
+  font-size: 5vw;
+  font-weight: @font-weight-titles;
+  letter-spacing: @letter-spacing-titles;
+  margin-bottom: 40px;
+}
+
+/* HOME > TEXT IMAGE */
+/* Image to the right for the text */
+.home-text-img-wrapper {width: 100%; height: 100px;}
+
+.home-text-img {
+  width: 110%;
+  min-height: 1500px;
+  opacity: 0.5;
+  background-image: url('../img/body-drawing.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* HOME > TEXT READMORE ICON */
+.home-text-readmore {
+  margin-top: 6px;
+  white-space: nowrap;
+
+  a {
+  color: @secondary-color;
+  font-family: @secondary-font;
+  }
+}
+
+/* HOME > TEXT INGRESS */
+.home-text-ingress {
+  color: @fourth-color;
+  font-family: @secondary-font;
+  font-size: 20pt;
+  font-weight: 300;
+  line-height: 30px;
+}
+/* HOME > TEXT */
+.home-text {
+  color: @third-color;
+  font-family: @secondary-font;
+  font-size: 14pt;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 4px;
+}
+
+
+/* HOME > POSTS + SEMINARS */
+
+/* HOME > POSTS > IMAGE BORDER-RADIUS */
+.home-posts-img-border-radius {border-radius: @border-radius;}
+
+/* HOME > POSTS > LINE */
+.home-posts-line {
+  background-color: @primary-color;
+  width: 100%;
+  height: 3px;
+  margin-top: 40px;}
+
+/* HOME > POSTS > TITLE */
+.home-posts-title {
+  color: @primary-color;
+  font-family: @primary-font;
+  margin-top: 30px;
+  font-size: 24pt;
+  line-height: 34px;
+}
+
+.home-posts-text {
+  color: @third-color;
+  font-family: @secondary-font;
+  font-size: 14pt;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .home-container {
+    margin: 100px 15px 0 15px
+  }
+
+  .home-text-img-wrapper {
+    display: none;
+  }
+
+  .home-text-title {
+    font-size: 10vw;
+  }
+
+  .home-text-ingress {
+    font-size: 16pt;
+    line-height: 28px;
+  }
+
+  .home-text {
+    font-size: 12pt;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 30px
+  }
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .margin-tablet {
+    margin: 0px 160px 0 85px;
+  }
+
+  .home-text-img-wrapper {
+    display: none;
+  }
+
+  .home-text-ingress {
+    font-size: 17pt;
+  }
+
+  .home-text {
+    font-size: 13pt;
+  }
+}

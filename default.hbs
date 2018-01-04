@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Ullernklinikken AS</title>
+
+
+   {{!-- CSS --}}
+   <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}">
+   <link rel="stylesheet" type="text/css" href="{{asset "css/master-min.css"}}" />
+
+   <script src="https://use.fontawesome.com/8209c9a349.js"></script>
+
+
+  {{!-- Brand icon --}}
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+
+  {{!-- Ghost outputs important style and meta data with this tag --}}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+  <div style="
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+    opacity: 1;
+    overflow: hidden;
+  " class="loading-screen">
+  <img
+    src="{{asset "assets/gfx/loading_icon.gif"}}"
+    width="300px;"
+    style="
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+  " class="loading-icon"
+  >
+
+  </div>
+
+    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+
+        {{{body}}}
+
+
+    {{!-- The tiny footer at the very bottom --}}
+    {{ghost_foot}}
+
+
+    {{!-- Javascript --}}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="{{asset "js/bootstrap.min.js"}}"></script>
+
+    <script type="text/javascript" src="{{asset "js/all-scripts-min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/map-min.js"}}"></script>
+
+
+</body>
+</html>

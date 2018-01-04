@@ -1,0 +1,86 @@
+<!-- FOOTER -->
+<!-- FOOTER > CONTAINER -->
+<div class="container-fluid">
+  <!-- FOOTER > ROW -->
+  <div class="row margintop-footer">
+
+    <!-- INNER FOOTER >  CONTAINER -->
+    <div class="container-fluid margin-container">
+      <!-- INNER FOOTER >  INFO-SECTIONS -->
+      <div class="row margintop-inner-footer">
+        <div class="col-sm-9 col-md-9 col-lg-3 resetpadding">
+          <div class="inner margin">
+            <div class="footer-info-text">
+              {{#get "posts" limit="all" include="author,tags"}}
+                {{#foreach posts}}
+                  {{#has tag="#footer-order"}}
+                    {{content}}
+                  {{/has}}
+                {{/foreach}}
+              {{/get}}
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-md-5 col-lg-3 col-lg-offset-1 resetpadding">
+          <div class="inner margin">
+            <div class="footer-info-text footer-info-linker">
+              {{#get "posts" limit="all" include="author,tags"}}
+                {{#foreach posts}}
+                  {{#has tag="#footer-links"}}
+                    {{content}}
+                  {{/has}}
+                {{/foreach}}
+              {{/get}}
+            </div>
+            <div class="footer-servicekontor-container">
+              <img src="../assets/img/logo-servicekontor.png" alt="" class="footer-servicekontor-img">
+              <div class="footer-servicekontor-text">Medlem av Manuell-<br/>terapeutenes Servicekontor</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7 col-md-7 col-lg-3 resetpadding footer-contact-text">
+          <div class="inner margin">
+            <p class="footer-contact-text-size"><i class="fa fa-phone-square fa-lg"></i>&nbsp;&nbsp; 21 42 42 00</p>
+            <p class="footer-contact-text-size"><i class="fa fa-map-marker fa-lg"></i>&nbsp;&nbsp;&nbsp; Ullern Allé 28</p>
+            <p class="footer-contact-text-size"><i class="fa fa-at fa-lg"></i> &nbsp;&nbsp;<span style="font-size:14px;">post@ullernklinikken.no</span></p>
+            <p class="footer-contact-text-size"><i class="fa fa-facebook-square fa-lg"></i> &nbsp;&nbsp;<span style="font-size:15px;">Følg oss på Facebook</span></p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-2 resetpadding">
+          <div class="inner margin">
+            <div class="googlemap-box-circle">
+              <a href="https://www.google.no/maps/place/Ullernklinikken+Manuellterapi+og+Rehabilitering+Sa/@59.9268115,10.6400237,17z/data=!4m13!1m7!3m6!1s0x46416d040a573a51:0xbd1edc8665da4c17!2sUllern+all%C3%A9+28,+0381+Oslo!3b1!8m2!3d59.9268088!4d10.6422124!3m4!1s0x0:0xebebf7d123257708!8m2!3d59.9270243!4d10.6426352?hl=en" alt="" target="_blank">
+                <div class="googlemap-box" id="map-footer">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div><!-- INNER FOOTER >  INFO-SECTIONS END -->
+      </div><!-- INNER FOOTER >  CONTAINER END -->
+
+      <!-- INNER FOOTER > LINE -->
+      <div class="row">
+        <div class="col-md-12 resetpadding">
+          <div class="inner margin">
+            <div class="footer-line"></div>
+          </div>
+        </div>
+      </div><!-- INNER FOOTER > LINE END -->
+
+      <!-- INNER FOOTER > CREDIT + LOGO -->
+      <div class="row">
+        <div class="col-md-10 resetpadding">
+          <div class="inner margin">
+            <div class="footer-credit-text">2017 © Ullernklinikken manuellterapi og rehabilitering</div>
+          </div>
+        </div>
+        <div class="col-md-2 resetpadding">
+          <div class="inner margin">
+            <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" width="110px" class="footer-logo"/></a>
+          </div>
+        </div>
+      </div><!-- INNER FOOTER > CREDIT + LOGO END -->
+    </div><!-- INNER FOOTER > CONTAINER END -->
+
+  </div><!-- FOOTER > ROW END -->
+</div><!-- FOOTER > CONTAINER END -->

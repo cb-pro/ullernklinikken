@@ -1,0 +1,388 @@
+{{!< default}}
+
+
+
+{{!-- ================================================= --}}
+
+{{!-- PARTIAL > NAV > SECONDARY --}}
+{{> navigation-secondary}}
+
+{{!-- ================================================= --}}
+
+<!-- MENU > SIDEBAR -->
+<div class="menu-partial">
+  {{> menu}}
+</div>
+
+<div class="container-fluid margin-container">
+
+  <!-- ROW -->
+  <div class="row margintop-info">
+
+
+    <!-- ========== CONTENT ========== -->
+
+
+    <!-- LEFT COLUMN -->
+    <div class="col-sm-12 col-md-8 resetpadding info-container">
+      <div class="inner margin">
+
+
+        <!-- GROUP-A > MANUELLTERAPI -->
+        <div class="group">
+          <div id="Manuellterapi" class="anchortag">
+          </div>
+
+          <!-- GROUP-A > MANUELLTERAPI > TITLE -->
+          {{#get "posts" limit="all" include="tags"}}
+            {{#foreach posts}}
+              {{#has tag="#manuellterapi"}}
+                <div class="info-title">
+                  <span class="hashtagremove">
+                    {{tags visibility="all" from="1" to="1" autolink="false"}}
+                  </span>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+
+          <!-- GROUP-A > MANUELLTERAPI > CONTENT -->
+          {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+            {{#foreach posts}}
+              {{#has tag="#manuellterapi-sub"}}
+                <div class="subgroup">
+                  <div id="{{tags visibility="all" limit="1" from="2" to="2" autolink="false"}}" class="anchortag-sub hashtagremoveId"></div>
+                  <!-- GROUP-A > MANUELLTERAPI > SUBTITLE -->
+                  <div id="" class="info-sub-title hashtagremoveId">{{title}}</div>
+                  <!-- GROUP-A > MANUELLTERAPI > TEXT -->
+                  <div class="info-text">{{content}}</div>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+
+        </div><!-- GROUP-A > MANUELLTERAPI END -->
+
+
+        <!-- GROUP-B > FYSIOTERAPI -->
+        <div class="group">
+          <div id="Fysioterapi" class="anchortag2">
+          </div>
+
+          <!-- GROUP-B > FYSIOTERAPI > TITLE -->
+          {{#get "posts" limit="all" include="tags"}}
+            {{#foreach posts}}
+              {{#has tag="#fysioterapi"}}
+                <div class="info-title">
+                  <span class="hashtagremove scrolltoFysio">
+                    {{tags visibility="all" from="1" to="1" autolink="false"}}
+                  </span>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+
+          <!-- GROUP-B > FYSIOTERAPI > CONTENT -->
+          {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+            {{#foreach posts}}
+              {{#has tag="#fysioterapi-sub"}}
+                <div class="subgroup">
+                  <div id="{{tags visibility="all" limit="1" from="2" to="2" autolink="false"}}" class="anchortag-sub hashtagremoveId"></div>
+                  <!-- GROUP-B > FYSIOTERAPI > SUBTITLE -->
+                  <div id="" class="info-sub-title hashtagremoveId">{{title}}</div>
+                  <!-- GROUP-B > FYSIOTERAPI > TEXT -->
+                  <div class="info-text">{{content}}</div>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+        </div><!-- GROUP-B > FYSIOTERAPI END -->
+
+
+        <!-- GROUP-C > UTDANNING -->
+        <div class="group">
+          <div id="Utdanning" class="anchortag2">
+          </div>
+
+          <!-- GROUP-C > UTDANNING > TITLE -->
+          {{#get "posts" limit="all" include="tags"}}
+            {{#foreach posts}}
+              {{#has tag="#utdanning"}}
+                <div class="info-title">
+                  <span id="Utdanning" class="hashtagremove">
+                    {{tags visibility="all" from="1" to="1" autolink="false"}}
+                  </span>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+
+          <!-- GROUP-C > UTDANNING > CONTENT -->
+          {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+            {{#foreach posts}}
+              {{#has tag="#utdanning-sub"}}
+                <div class="subgroup">
+                  <div id="{{tags visibility="all" limit="1" from="2" to="2" autolink="false"}}" class="anchortag-sub hashtagremoveId"></div>
+                  <!-- GROUP-C > UTDANNING > SUBTITLE -->
+                  <div id="" class="info-sub-title hashtagremoveId">{{title}}</div>
+                  <!-- GROUP-C > UTDANNING > TEXT -->
+                  <div class="info-text">{{content}}</div>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+        </div><!-- GROUP-C > UTDANNING END -->
+
+
+
+        <!-- GROUP-D > HENVISNING -->
+        <div class="group">
+          <div id="Henvisning" class="anchortag2">
+          </div>
+
+          <!-- GROUP-D > HENVISNING > TITLE -->
+          {{#get "posts" limit="all" include="tags"}}
+            {{#foreach posts}}
+              {{#has tag="#henvisning"}}
+                <div class="info-title">
+                  <span id="Henvisning" class="hashtagremove">
+                    {{tags visibility="all" from="1" to="1" autolink="false"}}
+                  </span>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+
+          <!-- GROUP-D > HENVISNING > CONTENT -->
+          {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+            {{#foreach posts}}
+              {{#has tag="#henvisning-sub"}}
+                <div class="subgroup">
+                  <div id="{{tags visibility="all" limit="1" from="2" to="2" autolink="false"}}" class="anchortag-sub hashtagremoveId"></div>
+                  <!-- GROUP-D > HENVISNING > SUBTITLE -->
+                  <div id="" class="info-sub-title hashtagremoveId">{{title}}</div>
+                  <!-- GROUP-D > HENVISNING > TEXT -->
+                  <div class="info-text">{{content}}</div>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+        </div><!-- GROUP-D > HENVISNING END -->
+
+
+
+        <!-- GROUP-E > LENKER -->
+        <div class="group">
+          <div id="Lenker" class="anchortag2">
+          </div>
+
+          <!-- GROUP-E > LENKER > TITLE -->
+          {{#get "posts" limit="all" include="tags"}}
+            {{#foreach posts}}
+              {{#has tag="#lenker"}}
+                <div class="info-title">
+                  <span id="Lenker" class="hashtagremove">
+                    {{tags visibility="all" from="1" to="1" autolink="false"}}
+                  </span>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+
+          <!-- GROUP-E > LENKER > CONTENT -->
+          {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+            {{#foreach posts}}
+              {{#has tag="#lenker-sub"}}
+                <div class="subgroup">
+                  <div id="{{tags visibility="all" limit="1" from="2" to="2" autolink="false"}}" class="anchortag-sub hashtagremoveId"></div>
+                  <!-- GROUP-E > LENKER > SUBTITLE -->
+                  <div id="" class="info-sub-title hashtagremoveId">{{title}}</div>
+                  <!-- GROUP-E > LENKER > TEXT -->
+                  <div class="info-text">{{content}}</div>
+                </div>
+              {{/has}}
+            {{/foreach}}
+          {{/get}}
+        </div><!-- GROUP-E > LENKER END -->
+
+
+
+      </div>
+    </div><!-- LEFT COLUMN END -->
+
+
+
+
+    <!-- ========== SIDEBAR ========== -->
+
+
+    <!-- RIGHT COLUMN > SIDEBAR -->
+    <div class="col-md-3 col-md-offset-1 resetpadding">
+      <div class="inner margin bs-docs-sidebar">
+
+        <div class="anchortag">
+        </div>
+
+        <!-- RIGHT COLUMN > SIDEBAR CONTAINER -->
+        <ul id="sidebar" class="nav nav-stacked fixed">
+
+
+          <li><!-- RIGHT COLUMN > SIDEBAR > GROUP-A TITLE -->
+            {{#get "posts" limit="all" include="tags"}}
+              {{#foreach posts}}
+                {{#has tag="#manuellterapi"}}
+                  <a href="#Manuellterapi" class="info-sidebar hashtagremove nav-sub-click">
+                    {{tags visibility="all" from="1" to="1" autolink="false"}}
+                  </a>
+                {{/has}}
+              {{/foreach}}
+            {{/get}}<!-- RIGHT COLUMN > SIDEBAR > GROUP-A TITLE END -->
+
+              <!-- RIGHT COLUMN > SIDEBAR > GROUP-A SUBTITLE -->
+              <ul class="nav nav-stacked nav-sub">
+                {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+                  {{#foreach posts}}
+                    {{#has tag="#manuellterapi-sub"}}
+                      <li>
+                        <a href="{{tags visibility="all" from="2" to="2" autolink="false"}}" class="info-sidebar nav-sub-click">{{title}}</a>
+                      </li>
+                    {{/has}}
+                  {{/foreach}}
+                {{/get}}
+              </ul>
+            </li>
+            <!-- RIGHT COLUMN > SIDEBAR > GROUP-A SUBTITLE END -->
+
+
+
+            <li><!-- RIGHT COLUMN > SIDEBAR > GROUP-B TITLE -->
+              {{#get "posts" limit="all" include="tags"}}
+                {{#foreach posts}}
+                  {{#has tag="#fysioterapi"}}
+                    <a href="#Fysioterapi" class="info-sidebar hashtagremove nav-sub-click">
+                      {{tags visibility="all" from="1" to="1" autolink="false"}}
+                    </a>
+                  {{/has}}
+                {{/foreach}}
+              {{/get}}<!-- RIGHT COLUMN > SIDEBAR > GROUP-B TITLE END -->
+
+                <!-- RIGHT COLUMN > SIDEBAR > GROUP-B SUBTITLE -->
+                <ul class="nav nav-stacked nav-sub">
+                  {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+                    {{#foreach posts}}
+                      {{#has tag="#fysioterapi-sub"}}
+                        <li>
+                          <a href="{{tags visibility="all" from="2" to="2" autolink="false"}}" class="info-sidebar nav-sub-click">{{title}}</a>
+                        </li>
+                      {{/has}}
+                    {{/foreach}}
+                  {{/get}}
+                </ul>
+            </li><!-- RIGHT COLUMN > SIDEBAR > GROUP-B SUBTITLE END -->
+
+
+
+            <li><!-- RIGHT COLUMN > SIDEBAR > GROUP-C TITLE -->
+              {{#get "posts" limit="all" include="tags"}}
+                {{#foreach posts}}
+                  {{#has tag="#utdanning"}}
+                    <a href="#Utdanning" class="info-sidebar hashtagremove nav-sub-click">
+                      {{tags visibility="all" from="1" to="1" autolink="false"}}
+                    </a>
+                  {{/has}}
+                {{/foreach}}
+              {{/get}}<!-- RIGHT COLUMN > SIDEBAR > GROUP-C TITLE END -->
+
+                <!-- RIGHT COLUMN > SIDEBAR > GROUP-C SUBTITLE -->
+                <ul class="nav nav-stacked nav-sub">
+                  {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+                    {{#foreach posts}}
+                      {{#has tag="#utdanning-sub"}}
+                        <li>
+                          <a href="{{tags visibility="all" from="2" to="2" autolink="false"}}" class="info-sidebar nav-sub-click">{{title}}</a>
+                        </li>
+                      {{/has}}
+                    {{/foreach}}
+                  {{/get}}
+                </ul>
+            </li><!-- RIGHT COLUMN > SIDEBAR > GROUP-C SUBTITLE END -->
+
+
+
+            <li><!-- RIGHT COLUMN > SIDEBAR > GROUP-D TITLE -->
+              {{#get "posts" limit="all" include="tags"}}
+                {{#foreach posts}}
+                  {{#has tag="#henvisning"}}
+                    <a href="#Henvisning" class="info-sidebar hashtagremove nav-sub-click">
+                      {{tags visibility="all" from="1" to="1" autolink="false"}}
+                    </a>
+                  {{/has}}
+                {{/foreach}}
+              {{/get}}<!-- RIGHT COLUMN > SIDEBAR > GROUP-D TITLE END -->
+
+                <!-- RIGHT COLUMN > SIDEBAR > GROUP-D SUBTITLE -->
+                <ul class="nav nav-stacked nav-sub">
+                  {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+                    {{#foreach posts}}
+                      {{#has tag="#henvisning-sub"}}
+                        <li>
+                          <a href="{{tags visibility="all" from="2" to="2" autolink="false"}}" class="info-sidebar nav-sub-click">{{title}}</a>
+                        </li>
+                      {{/has}}
+                    {{/foreach}}
+                  {{/get}}
+                </ul>
+            </li><!-- RIGHT COLUMN > SIDEBAR > GROUP-D SUBTITLE END -->
+
+
+
+            <li><!-- RIGHT COLUMN > SIDEBAR > GROUP-E TITLE -->
+              {{#get "posts" limit="all" include="tags"}}
+                {{#foreach posts}}
+                  {{#has tag="#lenker"}}
+                    <a href="#Lenker" class="info-sidebar hashtagremove nav-sub-click">
+                      {{tags visibility="all" from="1" to="1" autolink="false"}}
+                    </a>
+                  {{/has}}
+                {{/foreach}}
+              {{/get}}<!-- RIGHT COLUMN > SIDEBAR > GROUP-E TITLE END -->
+
+                <!-- RIGHT COLUMN > SIDEBAR > GROUP-E SUBTITLE -->
+                <ul class="nav nav-stacked nav-sub">
+                  {{#get "posts" limit="all" include="tags" order="published_at asc"}}
+                    {{#foreach posts}}
+                      {{#has tag="#lenker-sub"}}
+                        <li>
+                          <a href="{{tags visibility="all" from="2" to="2" autolink="false"}}" class="info-sidebar nav-sub-click">{{title}}</a>
+                        </li>
+                      {{/has}}
+                    {{/foreach}}
+                  {{/get}}
+                </ul>
+            </li><!-- RIGHT COLUMN > SIDEBAR > GROUP-E SUBTITLE END -->
+
+
+
+          </li>
+        </ul><!-- RIGHT COLUMN > SIDEBAR CONTAINER END -->
+      </div>
+    </div><!-- RIGHT COLUMN > SIDEBAR END -->
+
+  </div><!-- ROW END -->
+</div><!-- CONTAINER END -->
+
+
+<!-- GOOGLE MAPS HIDDEN -->
+<!-- Must be importet to avoid errors -->
+<div style="display:none;" id="map-contact"></div>
+<div style="display:none;" id="map-landing"></div>
+
+
+
+
+{{!-- ================================================= --}}
+
+{{!-- PARTIAL > FOOTER --}}
+{{> footer}}
+
+{{!-- ================================================= --}}

@@ -1,0 +1,9 @@
+<ul class="navbar-ul menu-ul">
+    <!-- Loop through the navigation items -->
+    {{#foreach navigation}}
+      <li class="nav-{{slug}}{{#if current}} navbar-link-style-active {{/if}} navbar-link-style navbar-li menu-li">
+        <a href="{{url absolute="true"}}" class="">{{label}}</a>
+      </li>
+    {{/foreach}}
+    <!-- End the loop -->
+</ul>

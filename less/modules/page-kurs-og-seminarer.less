@@ -1,0 +1,183 @@
+/* ---------------------------------------- */
+/*             KURS OG SEMINARER            */
+/* ---------------------------------------- */
+
+
+.kos-flex-row-wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+     -moz-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.kos-main-title {
+  color: @primary-color;
+  font-family: @primary-font;
+  font-size: 5vw;
+  font-weight: @font-weight-titles;
+  letter-spacing: @letter-spacing-titles;
+}
+
+.kos-seminar-rectangle {
+  color: @primary-color;
+  width: 100%;
+  border-width: 3px;
+  border-style: dashed;
+  border-radius: @border-radius;
+  padding: 30px 30px;
+  margin: 10px 0 60px 0px;
+}
+
+.kos-seminar-title {
+  color: @primary-color;
+  font-family: @primary-font;
+  font-size: 33px;
+  font-weight: @font-weight-titles;
+  letter-spacing: @letter-spacing-titles;
+  line-height: 36px;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.kos-seminar-line {
+  background: @primary-color;
+  width: 100%;
+  height: 3px;
+  margin: 20px 0 24px 0px;
+}
+
+.kos-seminar-content {
+  color: @third-color;
+  font-family: @secondary-font;
+  font-size: 16px;
+  line-height: 22px;
+
+  a {
+    color: @secondary-color;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  p:last-child {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+       -moz-flex-flow: column;
+            flex-flow: column;
+    -webkit-justify-content: center;
+       -moz-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-top: 35px;
+
+    a, a:visited {
+      color: @white-color;
+      background: @primary-color;
+      border-radius: 9px;
+      font-size: 18px;
+      padding: 15px 30px;
+      width: 75%;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: @white-color;
+      background: @secondary-color;
+    }
+  }
+}
+
+.kos-seminar-nopost {
+  font-family: @secondary-font;
+  color: @secondary-color;
+  font-size: 30px;
+  padding: 200px 0px 260px 0px;
+  text-align: center;
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .margintop-kos-main-title {
+    margin-top: 120px;
+  }
+
+  .margin-mobile {
+    margin: 0px 16px;
+  }
+
+  .kos-seminar-rectangle {
+    padding: 30px 25px;
+  }
+
+  .kos-main-title {
+    font-size: 11vw;
+    line-height: 12vw;
+  }
+
+  .kos-seminar-title {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .kos-seminar-content p:last-child a, .kos-seminar-content p:last-child a:visited {
+    width: 100%;
+    max-width: 200px;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .kos-main-title {
+    font-size: 8vw;
+    line-height: 9vw;
+  }
+
+  .kos-seminar-title {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  .kos-seminar-content p:last-child a, .kos-seminar-content p:last-child a:visited {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .kos-seminar-nopost {
+    font-family: @secondary-font;
+    color: @secondary-color;
+    font-size: 30px;
+    padding: 80px 0px 60px 0px;
+    text-align: center;
+    display: none;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .kos-seminar-nopost {
+    font-family: @secondary-font;
+    color: @secondary-color;
+    font-size: 20px;
+    padding: 50px 0px 60px 0px;
+    text-align: center;
+    display: none;
+  }
+}

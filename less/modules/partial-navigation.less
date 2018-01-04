@@ -1,0 +1,166 @@
+/* ---------------------------------- */
+/*             NAVIGATION             */
+/* ---------------------------------- */
+
+
+/* Navbar standard inline styles */
+.navbar-ul {
+  color: @landing-text-color;
+  font-family: @secondary-font;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.navbar-li {
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  border-left: 1px solid #bbbbbb;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.navbar-li:first-child {border: none;}
+
+.navbar-li:last-child {padding-right: 0px;}
+
+
+/* Navbar landing styles */
+.landing-navbar-wrapper {
+  color: @landing-text-color;
+  font-family: @secondary-font;
+  position: absolute;
+  right: 138px;
+  z-index: 60;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+     -moz-justify-content: flex-end;
+          justify-content: flex-end;
+}
+
+.landing-wcag-textsize {
+  font-family: @secondary-font;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+     -moz-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+       -o-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  margin-top: 50px;
+  width: 320px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+          justify-content: center;
+  z-index: 60;
+
+  .fa-lg {
+    margin-left: -4px;
+  }
+}
+
+.landing-wcag-textsize-secondary {
+  font-family: @secondary-font;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+     -moz-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+       -o-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  margin-top: 31px;
+  width: 320px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+          justify-content: center;
+  z-index: 60;
+
+  .fa-lg {
+    margin-left: -4px;
+  }
+}
+
+
+
+
+/* Wrapper for secondary navbar */
+.navigation-secondary {
+  background-color: @primary-color;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 60;
+}
+
+
+
+@media only screen and (max-width: 1399px) {
+    .landing-navbar {
+        display: none;
+    }
+
+    .navbar-ul {
+      color: @landing-text-color;
+      font-family: @secondary-font;
+      list-style-type: none;
+      padding-top: 100px;
+    }
+
+    .navbar-li {
+      display: block;
+      padding: 0px 10px 45px 40px;
+      border-left: none;
+      font-weight: 100;
+      font-size: 24px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .landing-navbar {
+        display: none;
+    }
+
+    .navbar-ul {
+      color: @landing-text-color;
+      font-family: @secondary-font;
+      list-style-type: none;
+      padding-top: 100px;
+    }
+
+    .navbar-li {
+      display: block;
+      padding: 0px 10px 45px 40px;
+      border-left: none;
+      font-weight: 400;
+      font-size: 24px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+  .menu-partial {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+}

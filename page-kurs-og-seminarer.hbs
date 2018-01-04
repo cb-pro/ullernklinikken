@@ -1,0 +1,82 @@
+{{!< default}}
+
+
+{{!-- ================================================= --}}
+
+{{!-- PARTIAL > NAV > SECONDARY --}}
+{{> navigation-secondary}}
+
+{{!-- ================================================= --}}
+
+<div class="menu-partial">
+  {{> menu}}
+</div>
+
+<div class="container-fluid margin-container">
+
+  <div class="row">
+    <div class="col-md-9 resetpadding margintop-kos-main-title">
+      <div class="inner margin">
+        <div class="kos-main-title">
+          Kurs og seminarer
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 resetpadding kos-flex-row-wrap">
+      {{#get "posts" limit="all" include="author,tags"}}
+        {{#foreach posts}}
+            {{#has tag="#kurs"}}
+              <div class="col-md-12 col-lg-6 resetpadding margintop-author-container">
+                <div class="inner margin margin-mobile">
+                  <div class="kos-seminar-rectangle">
+                    <div class="kos-seminar-title">
+                      {{title}}
+                    </div>
+                    <div class="kos-seminar-line">
+                    </div>
+                    <div class="kos-seminar-content">
+                      {{content}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            {{else}}
+
+              {{#has tag="#ingen_kurs"}}
+                <div class="col-md-12 col-lg-12">
+                  <div class="kos-seminar-nopost">
+                    {{title}}
+                  </div>
+                </div>
+              {{/has}}
+
+            {{/has}}
+
+        {{/foreach}}
+      {{/get}}
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- GOOGLE MAPS HIDDEN -->
+<!-- Must be importet to avoid errors -->
+<div style="display:none;" id="map-contact"></div>
+<div style="display:none;" id="map-landing"></div>
+
+
+
+{{!-- ================================================= --}}
+
+{{!-- PARTIAL > FOOTER --}}
+{{> footer}}
+
+{{!-- ================================================= --}}

@@ -1,0 +1,73 @@
+{{!< default}}
+
+{{!-- ================================================= --}}
+
+{{!-- PARTIAL > NAV > SECONDARY --}}
+{{> navigation-secondary}}
+
+{{!-- ================================================= --}}
+
+<div class="menu-partial">
+  {{> menu}}
+</div>
+
+
+<div class="container-fluid margin-container">
+
+  <div class="row">
+    <div class="col-md-6 resetpadding margintop-employees-main-title">
+      <div class="inner margin">
+        <div class="employees-main-title">
+          Medarbeidere
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 resetpadding employees-flex-row-wrap">
+
+      {{#get "posts" limit="all" include="author,tags"}}
+        {{#foreach posts}}
+          {{#has tag="#ansatte"}}
+          <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 resetpadding margintop-employees-container">
+            <div class="inner margin">
+
+              <div class="employees-container">
+                <div class="employees-frame-round">
+                  <div class="employees-crop">
+                        <img src="{{img_url feature_image}}" alt="" title="">
+                    </div>
+                </div>
+                <div class="employees-title">{{title}}</div>
+                <div class="employees-line"></div>
+                <div class="employees-phone">{{{content}}}</div>
+              </div>
+
+            </div>
+          </div>
+          {{/has}}
+        {{/foreach}}
+      {{/get}}
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- GOOGLE MAPS HIDDEN -->
+<!-- Must be importet to avoid errors -->
+<div style="display:none;" id="map-contact"></div>
+<div style="display:none;" id="map-landing"></div>
+
+
+
+{{!-- ================================================= --}}
+
+{{!-- PARTIAL > FOOTER --}}
+{{> footer}}
+
+{{!-- ================================================= --}}

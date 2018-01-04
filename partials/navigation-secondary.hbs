@@ -1,0 +1,46 @@
+<!-- SUB-NAVIGATION > WRAPPER -->
+
+<div class="container-fluid">
+  <!-- X > ROW -->
+  <div class="row navigation-secondary">
+
+
+    <!-- SUB-NAVIGATION > CONTAINER -->
+    <div class="container-fluid margin-container">
+
+      <!-- SUB-NAVIGATION > LOGO + NAVBAR -->
+      <div class="margintop-landing-logo-sub landing-logo">
+        <a href="{{@blog.url}}"><img src="{{asset "assets/gfx/logo.svg"}}" alt="{{@blog.title}}" width="140px"/></a>
+      </div><!-- SUB-NAVIGATION > LOGO + NAVBAR END -->
+
+      <!-- SUB-NAVIGATION > WCAG TEXT SIZE -->
+      <div class="landing-wcag-textsize-secondary navbar-link-style">
+        <a id="wcag-link"
+          href="#"
+          alt="Endre tekststørrelse"
+          title="For å endre tekststørrelse hold ned ctrl + for å øke og ctrl - for å minske. Ved mac bruker du cmd + og cmd -"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-contentoff="Content">
+          <i class="fa fa-font"></i>
+          <i class="fa fa-font fa-lg"></i>
+            <span style="margin-left:6px;">Tekststørrelse</span>
+        </a>
+      </div><!-- SUB-NAVIGATION > WCAG TEXT SIZE END -->
+
+      <!-- SUB-NAVIGATION > NAVBAR WRAPPER -->
+      <div class="margintop-landing-navbar-sub landing-navbar-wrapper">
+          <!-- SUB-NAVIGATION > NAVBAR -->
+          <div class="landing-navbar">
+            {{navigation}}
+          </div><!-- SUB-NAVIGATION > NAVBAR END -->
+          <div class="menu-icon">
+            <p style="display:inline-block; vertical-align:middle; padding-right:18px;">Meny</p>
+            <i class="fa fa-bars bars-icon" style="font-size:24px;"></i>
+          </div>
+      </div><!-- SUB-NAVIGATION > NAVBAR WRAPPER END-->
+    </div><!-- SUB-NAVIGATION > CONTAINER END -->
+
+
+  </div><!-- SUB-NAVIGATION > X -->
+</div><!-- SUB-NAVIGATION > WRAPPER END -->
